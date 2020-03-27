@@ -27,6 +27,7 @@ git clone https://github.com/khucnam/FastET
 	("your_fasta_file.fasta" file contains the sequences you want to classify. Please see the "sample.fasta" as an example.)
 
 3. Open the corresponding XXX_Result.csv file to see the results.
-   XXX can be one of the following NoSub-CBOW, NoSubFN, NoSubSK, SubCBOW, SubSK. These are 5 different word embedding feature type used. 
+   XXX can be one of the following: NoSub-CBOW, NoSubFN, NoSubSK, SubCBOW, SubSK. 
+   These are 5 different word embedding feature type used. 
    In each result file, there are 2 columms: first one contains the protein ID, the next column contains the probability of the protein sequence to be electron transport proteins.
 
