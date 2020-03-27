@@ -17,11 +17,25 @@ LIBRARY REQUIREMENTS
 		
 INSTRUCTION:
 
-Using git bash to clone all the required files in "YOUR FOLDER" folder
+1. Using git bash to clone all the required files in "YOUR FOLDER" folder
 git clone https://github.com/khucnam/FastET
 
-python Predict.py your_fasta_file.fasta
-("your_fasta_file.fasta" file contains the sequences you want to classify. Please see the "sample.fasta" as an example.)
+2. Download the model files from this link.
 
-Running the Predict.py script will generate the Result.csv file. In Result.csv file, there are 2 columms: first one contains the protein ID, the next column contains the probability of the protein sequence to be electron transport proteins.
+Then uncompress the Models.zip file into the Models folder. You should have the folders organized in the following way:
+	Models/Models/NoSub-CBOW
+	Models/Models/NoSubFN
+	Models/Models/NoSubSK
+	Models/Models/SubCBOW
+	Models/Models/SubSK
+
+3. Perform the prediction using the following command:
+	
+	python Predict.py your_fasta_file.fasta
+
+	("your_fasta_file.fasta" file contains the sequences you want to classify. Please see the "sample.fasta" as an example.)
+
+4. Open the corresponding XXX_Result.csv file to see the results.
+   XXX can be one of the following NoSub-CBOW, NoSubFN, NoSubSK, SubCBOW, SubSK. These are 5 different word embedding feature type used. 
+   In each result file, there are 2 columms: first one contains the protein ID, the next column contains the probability of the protein sequence to be electron transport proteins.
 
